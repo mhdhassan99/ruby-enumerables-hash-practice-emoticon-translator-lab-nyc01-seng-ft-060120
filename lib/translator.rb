@@ -22,7 +22,11 @@ binding.pry
 
 def get_japanese_emoticon(file)
   library = load_library('./lib/emoticons.yml')
-  binding.pry
+  library.each do |name, emoti|
+    if emoti[:english]
+      return emoti[:japanese]
+    end
+  end
 end
 
 
