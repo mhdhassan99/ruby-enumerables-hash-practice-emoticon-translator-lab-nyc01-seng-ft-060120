@@ -17,8 +17,8 @@ def load_library(file)
   new_data
 end
 
-library = load_library('./lib/emoticons.yml')
-binding.pry
+# library = load_library('./lib/emoticons.yml')
+# binding.pry
 
 def get_japanese_emoticon(file)
   library = load_library('./lib/emoticons.yml')
